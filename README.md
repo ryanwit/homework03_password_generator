@@ -25,7 +25,7 @@ Bootstap & Google
 ## Image
 ![image info](./assets/images/homework02_screengrab.png)
 
-<!-- ## Links
+## Links
 [link to GitHub!](https://github.com/ryanwit/homework02_responsiveness_portfolio)
 
 [link to Webpage!](https://ryanwit.github.io/homework02_responsiveness_portfolio/)
