@@ -20,7 +20,8 @@ I had many issues figuring out how to place an image in my jumbotron - but ultim
 
 ## Credits
 
-Bootstap & Google
+Help from my study group, Google, w2shools, https://www.freeformatter.com/javascript-beautifier.html
+
 
 ## Image
 ![image info](./assets/images/homework02_screengrab.png)
