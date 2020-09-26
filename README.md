@@ -2,7 +2,7 @@
 
 
 ## Description
-This website was created to showcase Ryan Witherspoon - this sit reviews his bio, his portfolio and a place to contact him.
+This website was created to randomly generate a password based of users criteria
 
 ## Installation
 Files sent over to github account 
@@ -12,24 +12,24 @@ Not Applicable
 
 ## Technologies Used
 
-Bootstrap, JavaScript, GoogleFonts
+Bootstrap, JavaScript, GoogleFont, code formatter
 
 ## Problems I faced
 
-I had many issues figuring out how to place an image in my jumbotron - but ultimately i figured it out
+I had a lot of test syntax errors which did not allow my prompts to display
 
 ## Credits
 
-Help from my study group, Google, w2shools, https://www.freeformatter.com/javascript-beautifier.html
+Help from my study group, Google, w3shools, https://www.freeformatter.com/javascript-beautifier.html
 
 
 ## Image
-![image info](./assets/images/homework02_screengrab.png)
+![image info](./assets/images/homework03_screengrab.png)
 
 ## Links
-[link to GitHub!](https://github.com/ryanwit/homework02_responsiveness_portfolio)
+[link to GitHub!](https://github.com/ryanwit/homework03_password_generator)
 
-[link to Webpage!](https://ryanwit.github.io/homework02_responsiveness_portfolio/)
+[link to Webpage!](https://ryanwit.github.io/homework03_password_generator/)
 
 
 # License

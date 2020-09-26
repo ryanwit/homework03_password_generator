@@ -20,7 +20,7 @@ function getCriteria() {
 	var confirmUpper = confirm("Would you like your password to contain uppercase letters?");
 	var confirmLower = confirm("Would you like your password to contain lowercase letter?");
 	var confirmNumber = confirm("Would you like your password to contain number(s)");
-	var confirmSymbol = confirm("Would  you like your password to contain special characters?");
+	var confirmSymbol = confirm("Would you like your password to contain special characters?");
 	//-----------------------------LOOPS--------------------------------------
 
 	if (confirmUpper === false && confirmLower === false && confirmNumber === false && confirmSymbol === false) {
