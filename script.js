@@ -43,35 +43,39 @@ function randomFunction(arr) {
 	return randomElement;
 }
 
+// Make sure the password has at least one of each of the required characters
+
+// Make sure the password is a minimum of 8 characters long and a max 128
+
 function generatePassword() {
-	var options = getCriteria();
-	var result = [];
-	var possibleChar = [];
-	var guaranteedChar = [];
-	if (options.confirmSymbol === true) {
-		possibleChar = possibleChar.concat(symbols);
-		guaranteedChar.push(randomFunction(symbols));
+	var password = "";
+	var options = getCriteria(); // {confirmLength: 15, confirmUpper: true, ...}
+	var length = options.confirmLength;
+	var charSelection = [ ];
+
+	
+	if (options.confirmSymbol) {
+		password += randomFunction(symbols);
+		charSelection = charSelection.concat(symbols);
 	}
-	if (options.confirmUpper === true) {
-		possibleChar = possibleChar.concat(upperCase);
-		guaranteedChar.push(randomFunction(upperCase));
+	if (options.confirmUpper) {
+		password += randomFunction(upperCase);
+		charSelection = charSelection.concat(upperCase);
 	}
-	if (options.confirmLower === true) {
-		possibleChar = possibleChar.concat(lowerCase);
-		guaranteedChar.push(randomFunction(lowerCase));
+	if (options.confirmLower) {
+		password += randomFunction(lowerCase);
+		charSelection = charSelection.concat(lowerCase);
 	}
-	if (options.confirmSymbol === true) {
-		possibleChar = possibleChar.concat(number);
-    guaranteedChar.push(randomFunction(number));
-  }
-	for (var i = 0; i < options.length; i++) {
-			var possibleChar = randomFunction(possibleChar);
-			result.push(possibleChar);
-		}
-	for (var i = 0; i < guaranteedChar.length; i++) {
-			result[i] = guaranteedChar[i];
-		}
-  return result.join('');
+	if (options.confirmNumber) {
+		password += randomFunction(number);
+		charSelection = charSelection.concat(number);
+	}
+	for(var num = password.length; num <= length; num++) {
+		password += randomFunction(charSelection);
+		
+	}
+	
+	return password;
 }
 		// Assignment Code
 		var generateBtn = document.querySelector("#generate");
